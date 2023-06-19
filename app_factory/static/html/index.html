@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask + pyecharts 数据可视化</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+</head>
+
+<body style="padding-top: 70px;">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:">上海 Big Data 可视化分析</a>
+
+            <ul class="nav navbar-nav">
+                <li><a href="/">首页</a></li>
+            </ul>
+
+        </div>
+        <!-- /.nav-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">销售数量关系图</div>
+                <div class="panel-body">
+                   <!-- <p><a href="/heatmap/">某人 2017 年微信步数情况</a></p>-->
+                    <p><a href="/computer/brand/">笔记本销量 牌子关系图</a></p>
+                    <p><a href="/computer/cpu/">笔记本销量-Cpu需求分析折线图</a></p>
+                    <p><a href="/computer/price/">笔记本销量-价格需求分析折线图</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{#        <div class="panel panel-default">#}
+{#        <div class="panel-heading">价格【销量】折线示例</div>#}
+{#        <div class="panel-body">#}
+{#            {{ echarts_container(hm) }}#}
+{#            笔记本销售的平均价格:{{ aver_price }}#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#    {{ echarts_js_content(hm) }}#}
+</div>
+</body>
+</html>
